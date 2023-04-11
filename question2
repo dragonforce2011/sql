@@ -1,0 +1,2 @@
+SELECT COUNT (birthdate) AS count_birthdate
+FROM people;
