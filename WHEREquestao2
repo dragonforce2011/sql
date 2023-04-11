@@ -1,0 +1,3 @@
+SELECT COUNT (num_votes) AS filme
+FROM reviews
+WHERE num_votes >= 100000;
