@@ -1,0 +1,4 @@
+SELECT title, release-year
+FROM films
+WHERE language = 'German'
+  AND releasing_year < 2000;
