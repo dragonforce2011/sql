@@ -1,0 +1,33 @@
+SELECT SUM (duration) AS total_duration
+FROM films;
+
+SELECT AVG (duration) AS average_duration
+FROM films;
+
+SELECT MAX (released_year) AS latest_year
+FROM films;
+
+SELECT MIN(duration) AS shortest_films
+FROM films;
+
+SELECT SUM (gross) AS total_gross
+FROM films
+WHERE release_year >= 2000;
+
+SELECT AVG(gross) AS avg_gross 
+FROM films
+WHERE title LIKE 'A%';
+
+SELECT MIN(gross) AS lowest_gross
+FROM films
+WHERE release_year = 1994; 
+
+SELECT MAX (gross) AS highest_gross
+FROM films
+WHERE release_year BETWEEN 2000 AND 2012;
+
+SELECT ROUND (AVG(facebook_likes), 1) AS avg_facebook_likes
+FROM reviews;
+
+SELECT ROUND(AVG(budget), -3) AS avg_budget_thousands
+FROM films;
