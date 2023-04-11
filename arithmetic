@@ -1,0 +1,12 @@
+SELECT title, (duration/ 60.0) AS duration_hours
+FROM films;
+
+SELECT COUNT(deathdate) * 100.0/ COUNT(id) AS percentage_dead
+FROM films;
+
+SELECT (MAX(release_year) - MIN(release_year)) / 10.0 AS number1_of_decades
+FROM films;
+
+SELECT title, ROUND0((duration / 60,0), 2) AS duration_hours
+FROM films;
+
