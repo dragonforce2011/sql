@@ -1,0 +1,5 @@
+SELECT *
+FROM films
+WHERE language = 'German'
+  AND released_year > 2000 
+  AND released_year < 2010;
