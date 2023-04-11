@@ -1,0 +1,15 @@
+SELECT name
+FROM people
+ORDER BY name;
+
+SELECT title, duration
+FROM films
+ORDER BY duration DESC;
+
+SELECT release_year, title, certification
+FROM films
+ORDER BY release_year, duration;
+
+SELECT certification, relese_year, title
+FROM films
+ORDER BY certification, release_year DESC; 
